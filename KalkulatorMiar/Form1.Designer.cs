@@ -55,19 +55,26 @@
             // numInput
             // 
             this.numInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numInput.Location = new System.Drawing.Point(181, 43);
+            this.numInput.Location = new System.Drawing.Point(168, 51);
+            this.numInput.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.numInput.Name = "numInput";
             this.numInput.Size = new System.Drawing.Size(120, 38);
             this.numInput.TabIndex = 2;
             // 
             // txtValue
             // 
+            this.txtValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtValue.Location = new System.Drawing.Point(102, 362);
+            this.txtValue.Location = new System.Drawing.Point(101, 356);
             this.txtValue.Name = "txtValue";
             this.txtValue.ReadOnly = true;
-            this.txtValue.Size = new System.Drawing.Size(231, 38);
+            this.txtValue.Size = new System.Drawing.Size(231, 31);
             this.txtValue.TabIndex = 4;
+            this.txtValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 

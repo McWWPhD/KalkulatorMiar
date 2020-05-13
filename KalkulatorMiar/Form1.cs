@@ -26,39 +26,45 @@ namespace KalkulatorMiar
 
             if (lbOptions.SelectedIndex > -1)
             {
-
-                switch (lbOptions.SelectedIndex)
+                if (lbOptions.SelectedIndex == 0 && numInput.Value > 0)
                 {
-                    case 0:
-                        txtValue.Text = string.Format("{0:#.00} фунт", conversion.KgToFunt(value));
-                        break;
-
-                    case 1:
-                        txtValue.Text = string.Format("{0:#.00} Kg", conversion.FuntToKg(value));
-                        break;
-
-                    case 2:
-                        txtValue.Text = string.Format("{0:#.00} °F", conversion.CelToFah(value));
-                        break;
-
-                    case 3:
-                        txtValue.Text = string.Format("{0:#.00} °C", conversion.FahToCel(value));
-                        break;
-
-                    case 4:
-                        txtValue.Text = string.Format("{0:#.00} Kts/h", conversion.KmHToKts(value));
-                        break;
-
-                    case 5:
-                        txtValue.Text = string.Format("{0:#.00} Km/h", conversion.KtsToKmH(value));
-                        break;
-
-                    default:
-                        break;
+                    txtValue.Text = string.Format("{0:#.00} фунт", conversion.KgToFunt(value));
+                    return;
+                }
+                else if (lbOptions.SelectedIndex == 1 && numInput.Value > 0)
+                {                    
+                    txtValue.Text = string.Format("{0:#.00} Kg", conversion.FuntToKg(value));
+                    return;
                 }
 
+                else if (lbOptions.SelectedIndex == 2)
+                {
+                    txtValue.Text = string.Format("{0:#.00} °F", conversion.CelToFah(value));
+                    return;
+                }
+
+                else if (lbOptions.SelectedIndex == 3)
+                {
+                    txtValue.Text = string.Format("{0:#.00} °C", conversion.FahToCel(value));
+                    return;
+                }
+
+                else if (lbOptions.SelectedIndex == 4 && numInput.Value > 0)
+                {
+                    txtValue.Text = string.Format("{0:#.00} Kts/h", conversion.KmHToKts(value));
+                    return;
+                }
+
+                else if (lbOptions.SelectedIndex == 5 && numInput.Value > 0)
+                {
+                    txtValue.Text = string.Format("{0:#.00} Km/h", conversion.KtsToKmH(value));
+                    return;
+                }
 
             }
+
+
+            
 
 
         }
