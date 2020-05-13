@@ -6,34 +6,34 @@ using System.Threading.Tasks;
 
 namespace KalkulatorMiar
 {
-    class Conversion
+    static class Conversion
     {
-        public double KgToFunt (double input)
+        public static double KgToFunt (double input)
         {
             return input / 0.4095;
         }
 
-        public double FuntToKg (double input)
+        public static double FuntToKg (double input)
         {
             return input * 0.4095;
         }
 
-        public double CelToFah (double input)
+        public static double CelToFah (double input)
         {
             return (input * 1.8000) + 32.00;
         }
 
-        public double FahToCel(double input)
+        public static double FahToCel(double input)
         {
             return (input - 32) / 1.8000;
         }
 
-        public double KmHToKts (double input)
+        public static double KmHToKts (double input)
         {
             return input * 0.539956803;
         }
 
-        public double KtsToKmH(double input)
+        public static double KtsToKmH(double input)
         {
             return input / 0.539956803;
         }

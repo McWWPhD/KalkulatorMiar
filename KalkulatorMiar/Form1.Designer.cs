@@ -67,12 +67,13 @@
             // 
             // txtValue
             // 
-            this.txtValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtValue.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtValue.Location = new System.Drawing.Point(101, 356);
             this.txtValue.Name = "txtValue";
             this.txtValue.ReadOnly = true;
-            this.txtValue.Size = new System.Drawing.Size(231, 31);
+            this.txtValue.Size = new System.Drawing.Size(231, 38);
             this.txtValue.TabIndex = 4;
             this.txtValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

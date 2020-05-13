@@ -12,7 +12,6 @@ namespace KalkulatorMiar
 {
     public partial class Form1 : Form
     {
-        Conversion conversion = new Conversion();
 
         public Form1()
         {
@@ -28,43 +27,40 @@ namespace KalkulatorMiar
             {
                 if (lbOptions.SelectedIndex == 0 && numInput.Value > 0)
                 {
-                    txtValue.Text = string.Format("{0:#.00} фунт", conversion.KgToFunt(value));
+                    txtValue.Text = string.Format("{0:#.00} фунт", Conversion.KgToFunt(value));
                     return;
                 }
                 else if (lbOptions.SelectedIndex == 1 && numInput.Value > 0)
                 {                    
-                    txtValue.Text = string.Format("{0:#.00} Kg", conversion.FuntToKg(value));
+                    txtValue.Text = string.Format("{0:#.00} Kg", Conversion.FuntToKg(value));
                     return;
                 }
 
                 else if (lbOptions.SelectedIndex == 2)
                 {
-                    txtValue.Text = string.Format("{0:#.00} °F", conversion.CelToFah(value));
+                    txtValue.Text = string.Format("{0:#.00} °F", Conversion.CelToFah(value));
                     return;
                 }
 
                 else if (lbOptions.SelectedIndex == 3)
                 {
-                    txtValue.Text = string.Format("{0:#.00} °C", conversion.FahToCel(value));
+                    txtValue.Text = string.Format("{0:#.00} °C", Conversion.FahToCel(value));
                     return;
                 }
 
                 else if (lbOptions.SelectedIndex == 4 && numInput.Value > 0)
                 {
-                    txtValue.Text = string.Format("{0:#.00} Kts/h", conversion.KmHToKts(value));
+                    txtValue.Text = string.Format("{0:#.00} Kts/h", Conversion.KmHToKts(value));
                     return;
                 }
 
                 else if (lbOptions.SelectedIndex == 5 && numInput.Value > 0)
                 {
-                    txtValue.Text = string.Format("{0:#.00} Km/h", conversion.KtsToKmH(value));
+                    txtValue.Text = string.Format("{0:#.00} Km/h", Conversion.KtsToKmH(value));
                     return;
                 }
 
-            }
-
-
-            
+            }          
 
 
         }
